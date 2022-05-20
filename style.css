@@ -1,0 +1,133 @@
+:root{
+
+    font-size: 100%;
+    font-size: 17px;
+    line-height: 1.5;
+    --primary-blue: #384c82;
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+}
+h1{
+    font-family: 'Manrope', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.logo{
+    position: absolute;
+    bottom: 64%;
+    left: 2rem;
+
+    width: 15rem;
+}
+.split-screen{
+    display: flex;
+    flex-direction: column;
+}
+.left, .right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left{
+    padding-top: 0;
+    margin-top: 0;
+    background: url(images/newbg.svg);
+    background-size: cover;
+    height: 20vh;
+}
+.right .copy{
+    color: black;
+    text-align: center;
+}
+.right form{
+    width: 328px;
+}
+form input[type="text"], form input[type="password"]{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 1px solid #c4c4c4;
+    padding: 1em;
+    margin-bottom: 1.25rem;
+    font-size: 0.875rem;
+
+}
+
+fieldset{
+   
+    border-radius: 10px;
+    height: 3.5rem;
+}
+input:focus{
+    outline: none;
+}
+#name{
+    border-style: hidden;
+}
+#password{
+    border-style: hidden;
+}
+form a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #9943b6;
+    display: flex;
+    flex-direction: row-reverse;
+    padding-top: 0%;
+
+}
+label{
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.75rem;
+}
+.input-container-username{
+    position: relative;
+}
+.input-container-username i{
+    position: absolute;
+    top: 4px;
+    right: 16px;
+}
+.input-container-password{
+    position: relative;
+}
+.input-container-password i{
+    position: absolute;
+    top: 5px;
+    right: 16px;
+}
+button{
+    display: block;
+    width: 100%;
+    background: var(--primary-blue);
+    color: white;
+    font-weight: 700;
+    border: none;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 8px;
+    font-size: 0.75rem;
+    letter-spacing: 0.5px;
+}
+button:hover{
+    background: #2c4893;
+    cursor:pointer;
+}
+@media screen and (min-width:900px){
+    .split-screen{
+        flex-direction: row;
+        height: 100vh;
+    }
+    .left, .right{
+        display: flex;
+        width: 50%;
+        height: auto;
+    }
+}
+
